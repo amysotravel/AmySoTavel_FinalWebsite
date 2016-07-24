@@ -7,28 +7,30 @@
 <link href="content_other.css" rel="stylesheet" type="text/css">
 </head>
 
-<body background="img/G2331083_edit.jpg" id="body">
+<body background="img/IMG_6400.jpg" id="body">
 <div class="center">
   <div  class="banner"><img src="img/BANNER.png"></div>
-  <div id="header"> 
+  
     
     <!--START  nav bar-->
+ <div id="header">    
     <div id="nav-wrapper">
       <ul class="nav" id="mynav">
-        <span onclick="show('Page1');">
-        <li><a >Home</a></li>
-        </span> <span onclick="show('Page2');">
-        <li><a >Snorkel Locations</a></li>
-        </span> <span onclick="show('Page3');">
-        <li><a>Travel Blog</a></li>
-        </span>
+        
+        <li><span onclick="show('Page1');"><a >Home</a>  </span> </li>
+     
+        <li> <span onclick="show('Page2');"><a >Snorkel Locations</a> </span> </li>
+      
+        <li> <span onclick="show('Page3');"><a>Travel Blog</a> </span></li>
+       
         <li><a>About</a></li>
         <li class="icon"> <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a> </li>
       </ul>
     </div>
+      </div>
     <!--END nav bar--> 
     
-  </div>
+
   
   <!--START HOME!-->
   
@@ -43,37 +45,55 @@
     <div class="subheader">SNORKEL locations</div>
     <div class="maincontent_snorkel" >
       <div class="responsive">
-        <div class="imgbox"> <a target="_blank" href="img_fjords.jpg"> <img src="img/Hawaii_map_new.png"  alt="hawaii map"> </a>
+        <div class="imgbox"> <span onclick="show('Page4');"><img src="img/Hawaii_map_new.png"  alt="hawaii map"> </span>
           <div class="desc">HAWAII</div>
         </div>
       </div>
       <div class="responsive">
-        <div class="imgbox"> <a target="_blank" href="img_forest.jpg"> <img src="img/indonesia_map_small.png" alt="indonesia map"> </a>
+        <div class="imgbox"> <span onclick="show('Page5');"> <img src="img/indonesia_map_small.png" alt="indonesia map"> </span>
           <div class="desc">INDONESIA</div>
         </div>
       </div>
       <div class="responsive">
-        <div class="imgbox"> <a target="_blank" href="img_lights.jpg"> <img src="img/thailand_map_small.png"  alt="thailand"> </a>
+        <div class="imgbox"> <span onclick="show('Page6');"> <img src="img/thailand_map_small.png"  alt="thailand"> </span>
           <div class="desc">THAILAND</div>
         </div>
       </div>
       <div class="responsive">
-        <div class="imgbox"> <a target="_blank" href="img_mountains.jpg"> <img src="img/GALAPOGOS_maps_small.png" alt="Mountains"> </a>
+        <div class="imgbox"> <span onclick="show('Page7');"> <img src="img/GALAPOGOS_maps_small.png" alt="Mountains"> </span>
           <div class="desc">GALAPOGOS ISLANDS</div>
         </div>
       </div>
       <div class="clearfix"></div>
     </div>
-    <p>&nbsp;</p>
   </div>
-  <!--END SNORKEL LOCACTIONS!--> 
+  <!--END SNORKEL LOCACTIONS!-->
+  
+  <div id="Page4" class="page">
+    <div class="subheader">HAWAII</div>
+    <div class="maincontent_snorkel" >tumet quiatio. Adia conecte senet as mos ipsunt elis doluptatem faccull uptatem fugiae istin et offic tem veliqua turiori iunt acestio blauda volorum et quiam, ommos erciis ea nobitio es cusdaeptas repudis velendi cust etusaer iaeped qui in et mo dolorem voluptius, nullatium harum aceati con estisque dit optas eum et vellupitet eatis accust, quibuscit, secte sum id molliqui totatat iisquis adis voluptatur as quas voluptatures andebisti sitas nitis que verferi aut od estrum et et, veribus amentibus et fugiae vellani sinturiam nem facestiant, que cullatem doluptat di dolorep reptasimi, vollibus endae porro odio. Ab incti reniam quidit as id estiam eicitiam eium il eossum volla sequissus sit exercid eos moluptatur am explibus ut adit undandandi incias nienimusam corporrunt doloreritis ant aut estibus aut earum reicaes sendera volore dunt.</div>
+  </div>
+  <div id="Page5" class="page">
+    <div class="subheader">INDONESIA</div>
+    <div class="maincontent_snorkel" >Pudam nessunt faccusanima net faccum debit magnatu reperum quibusdae et dolorumqui reribus invelibus ex est, se nonetusdae porem dolorrorro cus evenet quos invenim agnist, quo optatem quatiisit eum di unt landebis quidi tem as eos delest eume vidicitas consequo mosam abore et delest, qui acepudi omnihil il mi, seribusape et essimus dollibe rersperro tenimus.
+      Esti officiam, utatemq uuntorum net que peliqui assundae. Nam rero test aborem. Ut fugiaero eiur?
+      Minusan issect </div>
+  </div>
+  <div id="Page6" class="page">
+    <div class="subheader">THAILAND</div>
+    <div class="maincontent_snorkel" >Ur re, sandunt, ium vid molo most, omnis aciatem quibus aliquas simenis nonsed quaspel ibusanditiis sequae nimaxim eum vollute sam, sequia volut quunti dolorib uscilia ex et qui con re nate vid quame sapit lant, volessum eos sequid quatinvel endi venditia quo beatium quiasiti derro qui </div>
+  </div>
+  <div id="Page7" class="page">
+    <div class="subheader">GALAPOGOS ISANDS</div>
+    <div class="maincontent_snorkel" >molliqui totatat iisquis adis voluptatur as quas voluptatures andebisti sitas nitis que verferi aut od estrum et et, veribus amentibus et fugiae vellani sinturiam nem facestiant, que cullatem doluptat di dolorep reptasimi, vollibus endae porro odio. Ab incti reniam quidit as id estiam eicitiam eium il eossum volla sequissus sit exercid eos moluptatur am explibus ut adit undandandi incias nienimusam corporrunt doloreritis ant aut estibus aut earum reicaes sendera volore dunt. </div>
+  </div>
   
   <!--START TRAVEL BLOG-->
   <div id="Page3" class="page">
     <div class="subheader">TRAVEL blog</div>
     <div class="maincontent_snorkel" > </div>
   </div>
-  <!--END TRAVWL BLOG --> 
+  <!--END TRAVEL BLOG --> 
 </div>
 <footer>
   <ul>
@@ -94,22 +114,22 @@ function myFunction() {
 }
 
 
- // show the given page, hide the rest
+
             function show(elementID) {
-                // try to find the requested page and alert if it's not found
+            
                 var ele = document.getElementById(elementID);
                 if (!ele) {
                     alert("no such element");
                     return;
                 }
 
-                // get all pages, loop through them and hide them
+   
                 var pages = document.getElementsByClassName('page');
                 for(var i = 0; i < pages.length; i++) {
                     pages[i].style.display = 'none';
                 }
 
-                // then show the requested page
+            
                 ele.style.display = 'block';
             }
 </script>
