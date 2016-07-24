@@ -1,36 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>AmySoTravel_Eportfolio_Index</title>
-<link href="main.css" rel="stylesheet" type="text/css">
+<style></style>
+<link href="image_gallery.css" rel="stylesheet" type="text/css">
+<link href="nav_bar.css" rel="stylesheet" type="text/css">
+<link href="content_other.css" rel="stylesheet" type="text/css">
 </head>
 
-<body background="img/IMG_6243.jpg" id="body">
+<body background="img/G2331083_edit.jpg" id="body">
 <div class="center">
-  <div id="header">
+  <div  class="banner"><img src="img/BANNER.png"></div>
+  <div id="header"> 
+    
+    <!--START  nav bar-->
     <div id="nav-wrapper">
-      <ul>
-        <li><img src="img/guru.png" width="61" height="78" alt=""   /></li>
-        <span>
-        <li><a class="nav2" href="index.html">Home</a></li>
+      <ul class="nav" id="mynav">
+        <span onclick="show('Page1');">
+        <li><a >Home</a></li>
+        </span> <span onclick="show('Page2');">
+        <li><a >Snorkel Locations</a></li>
+        </span> <span onclick="show('Page3');">
+        <li><a>Travel Blog</a></li>
         </span>
-        <li><a class="nav" href="page2.html" >HTML/CSS</a></li>
-        <li><a class="nav" href="test.html">InDesign/Print</a></li>
-        <li><a class="nav" href="">About</a></li>
+        <li><a>About</a></li>
+        <li class="icon"> <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a> </li>
       </ul>
     </div>
+    <!--END nav bar--> 
+    
   </div>
   
-  <div  class="banner"> AMY ELIZABETH SCHMITT<br>
-    <span style="font-size:20px; color:white;"> "BE THE CHANGE YOU WANT TO SEE IN THE WORLD"</span><br>
-   <span style="font-size:15px; color:white; text-align:right">&tilde; Mahatma Gandhi</span> </div>
+  <!--START HOME!-->
   
-  <div id="main">
-    <div class="maincontent1" > <img src="img/IMG_6288.jpg" width="389" height="583" alt=""/>
-      <div class="maincontent2"> MAIN </div>
+  <div id="Page1" class="page">
+    <div class="subheader"></div>
+    <div class="maincontent_snorkel" > </div>
+  </div>
+  <!--END HOME !--> 
+  
+  <!--START SNORKEL LOCATIONS!-->
+  <div id="Page2" class="page">
+    <div class="subheader">SNORKEL locations</div>
+    <div class="maincontent_snorkel" >
+      <div class="responsive">
+        <div class="imgbox"> <a target="_blank" href="img_fjords.jpg"> <img src="img/Hawaii_map_new.png"  alt="hawaii map"> </a>
+          <div class="desc">HAWAII</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="imgbox"> <a target="_blank" href="img_forest.jpg"> <img src="img/indonesia_map_small.png" alt="indonesia map"> </a>
+          <div class="desc">INDONESIA</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="imgbox"> <a target="_blank" href="img_lights.jpg"> <img src="img/thailand_map_small.png"  alt="thailand"> </a>
+          <div class="desc">THAILAND</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="imgbox"> <a target="_blank" href="img_mountains.jpg"> <img src="img/GALAPOGOS_maps_small.png" alt="Mountains"> </a>
+          <div class="desc">GALAPOGOS ISLANDS</div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
     </div>
+    <p>&nbsp;</p>
   </div>
+  <!--END SNORKEL LOCACTIONS!--> 
+  
+  <!--START TRAVEL BLOG-->
+  <div id="Page3" class="page">
+    <div class="subheader">TRAVEL blog</div>
+    <div class="maincontent_snorkel" > </div>
+  </div>
+  <!--END TRAVWL BLOG --> 
 </div>
+<footer>
+  <ul>
+    <li> <img src="img/guru.png" > </li>
+    <li> 2016 </li>
+    <li> Amy SO. </li>
+    <li> All rights reserved.</li>
+  </ul>
+</footer>
+<script>
+function myFunction() {
+    var x = document.getElementById("mynav");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+
+
+ // show the given page, hide the rest
+            function show(elementID) {
+                // try to find the requested page and alert if it's not found
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
+
+                // get all pages, loop through them and hide them
+                var pages = document.getElementsByClassName('page');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+
+                // then show the requested page
+                ele.style.display = 'block';
+            }
+</script>
 </body>
 </html>
