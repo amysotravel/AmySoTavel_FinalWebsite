@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+.nav2
+{
+background-color: rgba(14, 177, 224, .8);
+	color:white;
+}
 
 #nav-wrapper {
 	display: table;
@@ -21,6 +26,7 @@ ul.nav {
 ul.nav li {
 	float: left;
 	color: #000000;
+	
 }
 
 ul.nav li a {
@@ -38,10 +44,6 @@ li a:hover:not(.active) {
 	color:white;
 }
 
-.nav2 {
-	background-color: rgba(14, 177, 224, .8);
-
-}
 ul.nav li.icon {
 	display: none;
 }
