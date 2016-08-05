@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style></style>
+<title>Travel Blog</title>
+<meta content="trave blog, snorkel guide">
 <link href="image_gallery.css" rel="stylesheet" type="text/css">
 <link href="nav_bar.css" rel="stylesheet" type="text/css">
 <link href="content_other.css" rel="stylesheet" type="text/css">
@@ -9,7 +10,7 @@
 
 <body background="img/IMG_6400.jpg" id="body">
 <div class="center">
-  <div  class="banner"><img src="img/BANNER.png"></div>
+  <div  class="banner"><img src="img/BANNER.png" alt="amy snorkel guide"></div>
   
     
     <!--START  nav bar-->
@@ -53,6 +54,7 @@
 </div>
   
 <script>
+<!--JavaScript Code for Responsive Nav Bar-->
 function myFunction() {
     var x = document.getElementById("mynav");
     if (x.className === "nav") {
@@ -63,24 +65,6 @@ function myFunction() {
 }
 
 
-
-            function show(elementID) {
-            
-                var ele = document.getElementById(elementID);
-                if (!ele) {
-                    alert("no such element");
-                    return;
-                }
-
-   
-                var pages = document.getElementsByClassName('page');
-                for(var i = 0; i < pages.length; i++) {
-                    pages[i].style.display = 'none';
-                }
-
-            
-                ele.style.display = 'block';
-            }
 </script>
 
 </body>

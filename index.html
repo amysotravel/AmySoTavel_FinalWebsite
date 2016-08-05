@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style></style>
+<title>Amy's Snorkel Guide</title>
+<meta content="trave blog, snorkel guide">
 <link href="image_gallery.css" rel="stylesheet" type="text/css">
 <link href="nav_bar.css" rel="stylesheet" type="text/css">
 <link href="content_other.css" rel="stylesheet" type="text/css">
@@ -9,16 +10,16 @@
 
 <body background="img/IMG_6400.jpg" id="body">
 <div class="center">
-<div  class="banner"><img src="img/BANNER.png"></div>
+<div  class="banner"><img src="img/BANNER.png" alt="snorkel, snorkeling, snorkel guide"></div>
 
-<!--START  nav bar-->
+<!--START  nav bar (example of using javascript to make NAV bar responsive)-->
 <div id="header">
   <div id="nav-wrapper">
     <ul class="nav" id="mynav">
       <li><a style="color:white;" class="nav2" href="index.html">Home</a> </li>
       <li><a href="snorkel_locations.html">Snorkel Locations</a> </li>
       <li><a href="travel_blog.html">Travel Blog</a></li>
-      <li><a>About</a></li>
+      <li><a href="mailto:schmamy@gmail.com" target="_blank">Contact Me</a></li>
       <li class="icon"> <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a> </li>
     </ul>
   </div>
@@ -28,30 +29,25 @@
 <div>
   <div class="subheader"></div>
   <div class="maincontent_snorkel" >
-   
-
-
-    <div class="div2"> 
-<br> 
-    <div style="padding:40px">
-        <img src="img/snorkel3.jpg"></div>
-   <div style="padding:50px">   <h1 >Grab a Mask and Jump In</h1>  
-  Hi my name is Amy.  I am here to share with you my knowledge and experience of different snorkeling locations around the world.  All of the information on this site is based on personal experience.  I am excited to share with you my experiences and knowledge and to answer any questions you have.
-  </div>
-  </div>
-    
-      
+    <div class="div2"> <br>
+      <div style="padding:40px"> <img src="img/snorkel3.jpg" alt="snorkel, snorkeling, snorkel guide"></div>
+      <div style="padding:50px">
+        <h1 >Grab a Mask and Jump In</h1>
+        Hi my name is Amy.  I am here to share with you my knowledge and experience of different snorkeling locations around the world.  All of the information on this site is based on personal experience.  I am excited to share with you my experiences and knowledge and to answer any questions you have. </div>
+    </div>
   </div>
   <br>
   <footer>
     <ul>
-      <li> <img src="img/guru.png" > </li>
+      <li> <img src="img/guru.png" alt="guru logo, snorkel, snorkeling"> </li>
       <li> 2016 </li>
       <li> Amy SO. </li>
       <li> All rights reserved.</li>
     </ul>
   </footer>
 </div>
+
+<!--JavaScript Code for Responsive Nav Bar--> 
 <script>
 function myFunction() {
     var x = document.getElementById("mynav");
@@ -62,25 +58,6 @@ function myFunction() {
     }
 }
 
-
-
-            function show(elementID) {
-            
-                var ele = document.getElementById(elementID);
-                if (!ele) {
-                    alert("no such element");
-                    return;
-                }
-
-   
-                var pages = document.getElementsByClassName('page');
-                for(var i = 0; i < pages.length; i++) {
-                    pages[i].style.display = 'none';
-                }
-
-            
-                ele.style.display = 'block';
-            }
 </script>
 </body>
 </html>
