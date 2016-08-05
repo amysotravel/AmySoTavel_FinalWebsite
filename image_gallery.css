@@ -1,5 +1,9 @@
 @charset "utf-8";
 @import url("IMAGE_SLIDER.css");
+
+/*This style sheet is mainly used for the image gallery which is what i'm calling the maps on the Snorkel Locations page.  The images of the maps are being displayed like an image gallery. */
+
+
 div.imgbox {
 	background-color: white;
 }

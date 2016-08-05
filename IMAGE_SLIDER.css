@@ -1,6 +1,5 @@
-html{
-    background-color: #eee;
-}
+
+/*This style sheet is used mostly for the Slideshow that is on the snorkel locations page.  There are a lot of notes to myself about duplicating some of the code. This is so that when i make a new slider I know which code to duplicate.  All the slides have to have their own page number.  So i have to duplicate that part of the code and rename the page numbers.  The rest of the code is being re-used. */
 
 #slider {
     max-width: 640px;
